@@ -1,0 +1,39 @@
+.Row {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 3vmin;
+	margin-top: 3vmin;
+}
+
+.GalleryItem p {
+	background-color: #ccc;
+	line-height: 3rem;
+	margin: 0;
+}
+
+.GalleryItem {
+	display: flex;
+	flex-direction: column;
+}
+
+.Portrait {
+	margin: 10px;
+}
+
+.PortraitBody {
+	display: flex;
+}
+
+.PortraitBody img {
+	margin-right: 5vmin;
+}
+
+.PortraitBody strong, .PortraitBody p {
+	display: block;
+	text-align: left;
+}
+
+h3 {
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}

@@ -19,7 +19,108 @@ TODO:\
 - DONE Reset selection button\
 - DONE Going back and forth between months causes invalid coloring to be weird\
 - DONE Select range in one month, go to another, when comes back range still selected\
-- select range across months\
-	\
+- DONE select range across months\
+- DONE start backend\
+	- DONE Start with default test DB that user can add dates to\
+	- DONE Calendar populates with date information\
+		- DONE Get previous dates if the main calendar object has the cal_info attribute\
+		- DONE In SetMonth method, check if any dates are within the month, they should be another color and have the attributed \'93booked\'94\
+- Return status of php request after run\
+	- DONE Previous dates retrieved/unable\
+	- Date submitted/booking conflict\
+- DONE Auto update when reservation made\
+- DONE Ask for link to test airbnb api\
+- DONE Reservation has name attached when returned\
+- DONE Reservations are deletable\
+	- DONE Clicking on reservation pulls it into selected reservation output\
+		- DONE Get reservation date\
+	- DONE selection_complete = true\
+	- DONE JS saves current res target\
+	- DONE Reset selection method also resets reservation output and JS res target\
+	- DONE Create delete reservation button\
+	- DONE When reservation selected, delete res becomes not disabled\
+	- DONE Delete button clicked: \
+		- DONE add fetch listener\
+		- DONE Create delete_res.php\
+			- DONE Checks that only one res matches\
+			- DONE Delete that res from the table\
+	- DONE Refresh calendar\
+		- DONE Fix bug with refreshing dates\
+- DONE Reservations are editable\
+- DONE Edit reservation UI\
+	- DONE Special color stays with month flips\
+	- DONE Check that color spans across months\
+	- DONE When reservation selected, get special color\
+	- DONE When reset, color reset\
+- DONE Refactor\
+	- DONE Put methods into classes as static methods\
+	- DONE Rename all variables named temp\
+	- DONE Proper commenting\
+- When submitting dates, allow names to be submitted\
+	- DONE Add name field\
+	- DONE Collect on submission\
+	- DONE Validate name to be only alpha numeric\
+	- DONE Adjust PHP script for name submission\
+	- DONE Test\
+- Permissions\
+	- Login page\
+		- DONE Make new main page\
+		- DONE Page has username, password, and submit form\
+		- Make table to submit to\
+			- DONE Username , password = strings\
+			- DONE Make PHP page to interpret\
+			- When match, submit user name as table name to calendar page\
+		- DONE JS file to handle button click and submitting data\
+		- DONE PHP file to receive and send SQL query\
+		- PHP on calendar page should return username and then get all data from that\
+	- Make option on login page to go as user without submitting a password\
+	- Make separate owner and user pages, usr page doesn\'92t have edit or delete options\
+	- DONE Adjust calendar page to receive a table name to query\
+		- DONE Upon initial entry, if no table matching, show blank calendar\
+	- DONE User can add dates to calendar\
+		- DONE User sees calendar where they are only allowed to submit dates\
+- DONE Fix bug where multi month reservations don\'92t block out the middle months\
+- DONE Refactor\
+	- DONE Move common JS to base to be globally accessed, extras come from other\
+- DONE Change date selection from date input to some element that just saves the input value\
+- DONE Add basic error handling to PHP rejections\
+- term requirements\
+	- DONE 4 Ajax calls (get, submit, edit, delete)\
+	- DONE Javascript\
+		- DONE 20 event handlers (not domcontentloaded)\
+		- DONE At least 1 class\
+		- DONE Make sure global functions aren\'92t used\
+		- DONE Show a mix of:\
+			- DONE Function expressions\
+			- DONE Function declarations\
+			- DONE Anonymous functions\
+			- DONE Arrow functions\
+	- CSS\
+		- at least 10 descendant selectors: ie. div p (all p elements inside divs)\
+		- at least 10 unique adjacent selectors: ie. div + p (all p elements that immediately follow a div)\
+		- at least 3 class selectors:\
+		- DONE at least 2 id selectors\
+		- at least 5 pseudo element selectors: ie. div:hover\
+		- at least 5 pseudo class selectors: ie. div::first-line\
+- CSS requirements\
+	- Mobile first\
+	- DONE Slide show of images under login form\
+	- DONE Fix calendar overflow view on mobile\
+	- DONE Fix background image issues\
+	- Aesthetic fixes\
+		- DONE make background color consistent on full screen, debug, and sim\
+		- DONE Add padding so nothing is on the wall\
+		- DONE center header, change to Rental Calendar, add name\
+		- DONE Put the month and date in line with buttons\
+		- DONE Next/previous month buttons should be arrows with underlines on hover\
+	- Property page adjustments\
+		- Change date input to an unclickable display\
+		- Remove redundant Date selected area and deal with appropriately in JS\
+		- Format reservation name input and submit button\
+		- Format reset selection button\
+		- Rework server response section\
 \
-https://realpython.com/python-http-server/}
+- CMS start\
+\
+\
+}
